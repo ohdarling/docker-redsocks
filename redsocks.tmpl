@@ -1,7 +1,8 @@
 base {
   log_debug = off;
   log_info = on;
-  log = "stderr";
+#log = "stderr";
+  log = "file:/tmp/rs.log"
   daemon = off;
   user = redsocks;
   group = redsocks;
