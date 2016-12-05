@@ -18,6 +18,7 @@ fw_setup() {
 
   # Finally we tell iptables to use the ‘REDSOCKS’ chain for all outgoing connection in the network interface ‘eth0′.
   iptables -t nat -A PREROUTING -p tcp -j REDSOCKS
+  iptables -t nat -A OUTPUT -p tcp -m tcp --dport 53 -j REDSOCKS
 }
 
 ##########################
