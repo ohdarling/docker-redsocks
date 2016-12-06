@@ -19,7 +19,7 @@ echo "Generated configuration:"
 cat /tmp/redsocks.conf
 
 echo "Activating iptables rules..."
-/usr/local/bin/redsocks-fw.sh start
+#/usr/local/bin/redsocks-fw.sh start
 
 pid=0
 
